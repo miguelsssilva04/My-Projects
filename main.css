@@ -6,6 +6,7 @@
 
 body{
     background-color: #f1f1f1;
+    position: relative;
 }
 
 .app-container{
@@ -49,6 +50,7 @@ body{
 .app-container h3{
     font-size: 15px;
     margin-top: 5px;
+    z-index: 1;
 }
 
 .watermark{
@@ -59,4 +61,79 @@ body{
     font-size: 25px;
     letter-spacing: 3px;
     color: #c2c2c2;
+    z-index: 0;
+}
+
+.window-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window{
+    background-color: #d8d8d8;
+    position: absolute;
+    z-index: 2;
+    height: 75vh;
+    width: 538px;
+    top: 100px;
+    border-radius: 30px;
+}
+
+.window-header{
+    height: 50px;
+    background-color: #616161;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.x-div{
+    height: 100%;
+    width: 70px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.--div{
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.x-div:hover{
+    background-color: #AC0000;
+    height: 100%;
+    width: 70px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.--div:hover{
+    background-color: #AC7200;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
 }
