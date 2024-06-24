@@ -62,22 +62,24 @@ body{
     letter-spacing: 3px;
     color: #c2c2c2;
     z-index: 0;
+    user-select: none;
 }
 
-.window-container{
+#container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.window{
+#calculatorWindow{
     background-color: #d8d8d8;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    height: 75vh;
+    height: 700px;
     width: 538px;
     top: 100px;
     border-radius: 30px;
+    display: none;
 }
 
 .window-header{
@@ -88,6 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: end;
+    width: 538px;
 }
 
 .x-div{
@@ -137,3 +140,4 @@ body{
     text-decoration: none;
     font-size: 28px;
 }
+
